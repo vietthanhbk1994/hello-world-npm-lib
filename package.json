@@ -1,10 +1,10 @@
 {
   "name": "hello-world-npm-lib",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Demo publish lib to npm",
-  "main": "build/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "babel index.js -d build"
+    "build": "babel index.js -d ."
   },
   "repository": {
     "type": "git",
