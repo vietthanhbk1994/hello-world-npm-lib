@@ -1,0 +1,19 @@
+{
+  "name": "hello-world-npm-lib",
+  "version": "1.0.0",
+  "description": "Demo publish lib to npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vietthanhbk1994/hello-world-npm-lib.git"
+  },
+  "author": "Ngo Viet Thanh <vietthanhbk1994@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vietthanhbk1994/hello-world-npm-lib/issues"
+  },
+  "homepage": "https://github.com/vietthanhbk1994/hello-world-npm-lib#readme"
+}
