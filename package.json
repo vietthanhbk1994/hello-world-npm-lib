@@ -2,9 +2,10 @@
   "name": "hello-world-npm-lib",
   "version": "1.0.4",
   "description": "Demo publish lib to npm",
-  "main": "index.js",
+  "main": "public/bundle.js",
   "scripts": {
-    "build": "babel index.js -d ."
+    "build": "webpack",
+    "start": "webpack-dev-server --port 7777 --progress"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,13 @@
   "homepage": "https://github.com/vietthanhbk1994/hello-world-npm-lib#readme",
   "dependencies": {
     "@material-ui/core": "^3.0.1",
-    "react": "^16.4.2"
+    "compression-webpack-plugin": "^1.1.12",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
