@@ -1,8 +1,8 @@
 {
   "name": "hello-world-npm-lib",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Demo publish lib to npm",
-  "main": "public/bundle.js",
+  "main": "./src/Button/index.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server --port 7777 --progress"
@@ -20,6 +20,8 @@
   "dependencies": {
     "@material-ui/core": "^3.0.1",
     "compression-webpack-plugin": "^1.1.12",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "style-loader": "^0.23.0",

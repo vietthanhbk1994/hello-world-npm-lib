@@ -1,6 +1,6 @@
 'use strict';
 
-import Button from './Button/index';
+import Button from './src/Button/index';
 
 export {
     Button
