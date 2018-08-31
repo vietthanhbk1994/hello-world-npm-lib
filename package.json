@@ -1,8 +1,8 @@
 {
   "name": "hello-world-npm-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Demo publish lib to npm",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "build": "babel index.js -d build"
   },
