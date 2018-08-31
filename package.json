@@ -1,6 +1,6 @@
 {
   "name": "hello-world-npm-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Demo publish lib to npm",
   "main": "index.js",
   "scripts": {
