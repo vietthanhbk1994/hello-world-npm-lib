@@ -1,3 +1,6 @@
 'use strict';
+import Button from './Button/index';
 
-module.exports = require('./Button');
+module.exports = {
+    Button
+};
