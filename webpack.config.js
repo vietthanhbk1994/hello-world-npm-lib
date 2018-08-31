@@ -6,15 +6,15 @@ module.exports = {
     output: {
         path: path.resolve('lib'),
         filename: 'BoilerplateComponent.js',
-        libraryTarget: 'commonjs2'
+        libraryTarget: 'commonjs2',
     },
     module: {
         rules: [
             {
                 test: /\.jsx?$/,
-                exclude: /(node_modules)/,
-                use: 'babel-loader'
+                loader: 'babel-loader',
+                exclude: /node_modules/,
             }
         ]
     }
-}
+};
