@@ -1,11 +1,12 @@
 {
   "name": "hello-world-npm-lib",
-  "version": "1.0.10",
+  "version": "1.0.14",
   "description": "Demo publish lib to npm",
-  "main": "./src/Button/index.js",
+  "main": "lib/HelloLib.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --port 7777 --progress"
+    "build": "webpack --pregress --colors --p",
+    "start": "webpack-dev-server --port 7777 --progress",
+    "transpile": "node_modules/.bin/babel ./src/HelloLib.js --presets babel-preset-es2015 --out-file lib/HelloLib.js"
   },
   "repository": {
     "type": "git",

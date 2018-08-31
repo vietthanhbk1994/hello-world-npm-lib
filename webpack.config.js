@@ -1,20 +1,25 @@
-var path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-    mode: 'production',
-    entry: './src/Button/index.js',
+    devtool: "source-map",
+    mode: "none",
+    entry: './src/index.js',
     output: {
-        path: path.resolve('lib'),
-        filename: 'BoilerplateComponent.js',
-        libraryTarget: 'commonjs2',
+        path: __dirname + "/dist",
+        filename: 'bundle.js',
     },
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
-                loader: 'babel-loader',
+                test: /\.js$/,
+                loader:'babel-loader',
                 exclude: /node_modules/,
             }
         ]
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('production')
+        }),
+    ]
 };
